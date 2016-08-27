@@ -1,0 +1,824 @@
+
+
+Started GET "/" for ::1 at 2016-08-27 03:24:09 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered home/index.html.erb within layouts/application (14.0ms)
+  Rendered home/_navbar.html.erb (0.5ms)
+  Rendered home/_new_question_form.html.erb (0.8ms)
+Completed 200 OK in 1377ms (Views: 1361.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/questions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2016-08-27 03:24:11 +0530
+
+
+Started GET "/assets/home-771212b0a6d2eec8604e0ce24996f64c.css?body=1" for ::1 at 2016-08-27 03:24:11 +0530
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2016-08-27 03:24:11 +0530
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2016-08-27 03:24:11 +0530
+
+
+Started GET "/assets/answers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2016-08-27 03:24:11 +0530
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2016-08-27 03:24:11 +0530
+
+
+Started GET "/assets/answers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2016-08-27 03:24:11 +0530
+
+
+Started GET "/assets/questions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2016-08-27 03:24:11 +0530
+
+
+Started GET "/assets/home-0aaa9659b32736d3eec62bd99093767b.js?body=1" for ::1 at 2016-08-27 03:24:11 +0530
+
+
+Started POST "/questions" for ::1 at 2016-08-27 03:24:38 +0530
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0eOHKQzQmfqP9WdJZfU1rmGjQbBLXSj5S8Oc8T6i05hoCtk7bjkb9gQFZF8RZvJuUcHW6AynbspcXjU9aAALOw==", "question"=>{"email"=>"shanukprasad2000@gmail.com", "body"=>"hey test question"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "questions" ("email", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "shanukprasad2000@gmail.com"], ["body", "hey test question"], ["created_at", "2016-08-26 21:54:38.672539"], ["updated_at", "2016-08-26 21:54:38.672539"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2016-08-27 03:24:38 +0530
+Processing by HomeController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered home/index.html.erb within layouts/application (3.8ms)
+  Rendered home/_navbar.html.erb (0.0ms)
+  Rendered home/_new_question_form.html.erb (0.2ms)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-08-27 03:24:48 +0530
+Processing by HomeController#index as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+  Rendered home/_navbar.html.erb (0.0ms)
+  Rendered home/_new_question_form.html.erb (0.4ms)
+Completed 200 OK in 57ms (Views: 56.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-27 03:33:13 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered home/index.html.erb within layouts/application (13.8ms)
+  Rendered home/_navbar.html.erb (0.5ms)
+  Rendered home/_new_question_form.html.erb (0.7ms)
+Completed 200 OK in 193ms (Views: 167.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/home-771212b0a6d2eec8604e0ce24996f64c.css?body=1" for 127.0.0.1 at 2016-08-27 03:33:14 +0530
+
+
+Started GET "/assets/questions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2016-08-27 03:33:14 +0530
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2016-08-27 03:33:14 +0530
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2016-08-27 03:33:14 +0530
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2016-08-27 03:33:14 +0530
+
+
+Started GET "/assets/answers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2016-08-27 03:33:14 +0530
+
+
+Started GET "/assets/home-0aaa9659b32736d3eec62bd99093767b.js?body=1" for 127.0.0.1 at 2016-08-27 03:33:14 +0530
+
+
+Started GET "/assets/answers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2016-08-27 03:33:14 +0530
+
+
+Started GET "/assets/questions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2016-08-27 03:33:14 +0530
+
+
+Started GET "/" for 192.168.1.28 at 2016-08-27 03:55:53 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered home/index.html.erb within layouts/application (12.4ms)
+  Rendered home/_navbar.html.erb (0.3ms)
+  Rendered home/_new_question_form.html.erb (0.7ms)
+Completed 200 OK in 139ms (Views: 124.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/home-771212b0a6d2eec8604e0ce24996f64c.css?body=1" for 192.168.1.28 at 2016-08-27 03:55:53 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/answers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.1.28 at 2016-08-27 03:55:53 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/questions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.1.28 at 2016-08-27 03:55:53 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.1.28 at 2016-08-27 03:55:53 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.1.28 at 2016-08-27 03:55:53 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.1.28 at 2016-08-27 03:55:53 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/answers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.1.28 at 2016-08-27 03:55:53 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home-0aaa9659b32736d3eec62bd99093767b.js?body=1" for 192.168.1.28 at 2016-08-27 03:55:53 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/questions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.1.28 at 2016-08-27 03:55:54 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/questions/31" for 192.168.1.28 at 2016-08-27 03:56:35 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 31]]
+  Rendered home/_new_answer_form.html.erb (1.4ms)
+  [1m[35mAnswer Load (0.5ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  ORDER BY "answers"."created_at" DESC  [["question_id", 31]]
+  Rendered questions/show.html.erb within layouts/application (8.2ms)
+  Rendered home/_navbar.html.erb (0.0ms)
+  Rendered home/_new_question_form.html.erb (0.2ms)
+Completed 200 OK in 96ms (Views: 69.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/answers" for 192.168.1.28 at 2016-08-27 03:56:58 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GtZuextVJXpxQ/bbCn2P93dry4bNaavXJf1NQC2M4jWAsEodLa8bcodPHMn+Dg5KTVBEcfMDNoSBvsar9+Dpiw==", "answer"=>{"question_id"=>"31", "email"=>"shanukprasad2000@gmail.com", "body"=>"this is Good"}}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 31]]
+Unpermitted parameter: question_id
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "answers" ("email", "body", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["email", "shanukprasad2000@gmail.com"], ["body", "this is Good"], ["question_id", 31], ["created_at", "2016-08-26 22:26:58.895405"], ["updated_at", "2016-08-26 22:26:58.895405"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+[ActiveJob] Enqueued ActionMailer::DeliveryJob (Job ID: e0a5a894-44bc-418f-961f-ab6b0f0b92f9) to SuckerPunch(mailers) with arguments: "MainMailer", "notify_question_author", "deliver_now", gid://hu/Answer/26
+Unpermitted parameter: question_id
+Redirected to http://192.168.1.4:3000/questions/31
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1[0m  [["id", 26]]
+Completed 302 Found in 55ms (ActiveRecord: 1.4ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [e0a5a894-44bc-418f-961f-ab6b0f0b92f9] Performing ActionMailer::DeliveryJob from SuckerPunch(mailers) with arguments: "MainMailer", "notify_question_author", "deliver_now", gid://hu/Answer/26
+
+
+Started GET "/questions/31" for 192.168.1.28 at 2016-08-27 03:56:58 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 31]]
+  Rendered home/_new_answer_form.html.erb (0.3ms)
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  ORDER BY "answers"."created_at" DESC[0m  [["question_id", 31]]
+  Rendered questions/show.html.erb within layouts/application (2.6ms)
+  Rendered home/_navbar.html.erb (0.1ms)
+  Rendered home/_new_question_form.html.erb (0.3ms)
+Completed 200 OK in 62ms (Views: 60.4ms | ActiveRecord: 0.2ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [e0a5a894-44bc-418f-961f-ab6b0f0b92f9]   [1m[35mQuestion Load (0.2ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 31]]
+[ActiveJob] [ActionMailer::DeliveryJob] [e0a5a894-44bc-418f-961f-ab6b0f0b92f9]   Rendered main_mailer/notify_question_author.html.erb within layouts/mailer (0.5ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [e0a5a894-44bc-418f-961f-ab6b0f0b92f9]   Rendered main_mailer/notify_question_author.text.erb within layouts/mailer (0.3ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [e0a5a894-44bc-418f-961f-ab6b0f0b92f9] 
+MainMailer#notify_question_author: processed outbound mail in 5179.4ms
+[ActiveJob] [ActionMailer::DeliveryJob] [e0a5a894-44bc-418f-961f-ab6b0f0b92f9] 
+Sent mail to samer.buna@gmail.com (10.2ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [e0a5a894-44bc-418f-961f-ab6b0f0b92f9] Date: Sat, 27 Aug 2016 03:57:04 +0530
+From: shanukprasad2000@gmail.com
+To: samer.buna@gmail.com
+Message-ID: <57c0c2381f238_c2fe3fd9f04fbf78529d1@Shanus-MacBook-Pro.local.mail>
+Subject: New answer to your question
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_57c0c2381d669_c2fe3fd9f04fbf78528a8";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_57c0c2381d669_c2fe3fd9f04fbf78528a8
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+My answer:
+
+this is Good
+
+
+----==_mimepart_57c0c2381d669_c2fe3fd9f04fbf78528a8
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    Hi,
+
+<h3>My answer:</h3>
+
+<p>
+  this is Good
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_57c0c2381d669_c2fe3fd9f04fbf78528a8--
+
+[ActiveJob] [ActionMailer::DeliveryJob] [e0a5a894-44bc-418f-961f-ab6b0f0b92f9] Performed ActionMailer::DeliveryJob from SuckerPunch(mailers) in 5190.44ms
+
+
+Started GET "/" for 192.168.1.28 at 2016-08-27 03:57:04 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+  Rendered home/_navbar.html.erb (0.4ms)
+  Rendered home/_new_question_form.html.erb (1.0ms)
+Completed 200 OK in 60ms (Views: 59.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions/31" for 192.168.1.28 at 2016-08-27 03:57:08 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 31]]
+  Rendered home/_new_answer_form.html.erb (0.3ms)
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  ORDER BY "answers"."created_at" DESC[0m  [["question_id", 31]]
+  Rendered questions/show.html.erb within layouts/application (3.0ms)
+  Rendered home/_navbar.html.erb (0.2ms)
+  Rendered home/_new_question_form.html.erb (0.6ms)
+Completed 200 OK in 63ms (Views: 61.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/31" for 192.168.1.28 at 2016-08-27 03:57:14 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 31]]
+  Rendered home/_new_answer_form.html.erb (0.2ms)
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  ORDER BY "answers"."created_at" DESC[0m  [["question_id", 31]]
+  Rendered questions/show.html.erb within layouts/application (2.4ms)
+  Rendered home/_navbar.html.erb (0.0ms)
+  Rendered home/_new_question_form.html.erb (0.2ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/answers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.1.28 at 2016-08-27 03:57:14 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home-771212b0a6d2eec8604e0ce24996f64c.css?body=1" for 192.168.1.28 at 2016-08-27 03:57:14 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/questions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.1.28 at 2016-08-27 03:57:14 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.1.28 at 2016-08-27 03:57:14 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.1.28 at 2016-08-27 03:57:14 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.1.28 at 2016-08-27 03:57:14 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/answers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.1.28 at 2016-08-27 03:57:14 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/questions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.1.28 at 2016-08-27 03:57:14 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home-0aaa9659b32736d3eec62bd99093767b.js?body=1" for 192.168.1.28 at 2016-08-27 03:57:14 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 192.168.1.28 at 2016-08-27 03:57:20 +0530
+Cannot render console from 192.168.1.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+  Rendered home/_navbar.html.erb (0.0ms)
+  Rendered home/_new_question_form.html.erb (0.3ms)
+Completed 200 OK in 47ms (Views: 45.5ms | ActiveRecord: 0.2ms)
+Terminating 3 actors...
+Terminating task: type=:finalizer, meta={:method_name=>:__shutdown__}, status=:receiving
+	Celluloid::TaskFiber backtrace unavailable. Please try `Celluloid.task_class = Celluloid::TaskThread` if you need backtraces here.
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "questions"[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "questions" WHERE "questions"."id" = ?  [["id", 1]]
+
+
+Started GET "/" for ::1 at 2016-08-27 13:29:33 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered home/index.html.erb within layouts/application (11.4ms)
+  Rendered home/_navbar.html.erb (0.3ms)
+  Rendered home/_new_question_form.html.erb (0.6ms)
+Completed 200 OK in 117ms (Views: 103.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/questions/31" for ::1 at 2016-08-27 13:29:37 +0530
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 31]]
+  Rendered home/_new_answer_form.html.erb (1.0ms)
+  [1m[35mAnswer Load (0.7ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  ORDER BY "answers"."created_at" DESC  [["question_id", 31]]
+  Rendered questions/show.html.erb within layouts/application (14.2ms)
+  Rendered home/_navbar.html.erb (0.0ms)
+  Rendered home/_new_question_form.html.erb (0.3ms)
+Completed 200 OK in 95ms (Views: 60.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/questions/30" for ::1 at 2016-08-27 13:29:41 +0530
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 30]]
+  Rendered home/_new_answer_form.html.erb (0.2ms)
+  [1m[35mAnswer Load (0.1ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  ORDER BY "answers"."created_at" DESC  [["question_id", 30]]
+  Rendered questions/show.html.erb within layouts/application (1.9ms)
+  Rendered home/_navbar.html.erb (0.0ms)
+  Rendered home/_new_question_form.html.erb (0.2ms)
+Completed 200 OK in 50ms (Views: 48.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/27" for ::1 at 2016-08-27 13:29:45 +0530
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 27]]
+  Rendered home/_new_answer_form.html.erb (0.3ms)
+  [1m[35mAnswer Load (0.1ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  ORDER BY "answers"."created_at" DESC  [["question_id", 27]]
+  Rendered questions/show.html.erb within layouts/application (2.6ms)
+  Rendered home/_navbar.html.erb (0.0ms)
+  Rendered home/_new_question_form.html.erb (0.2ms)
+Completed 200 OK in 61ms (Views: 57.8ms | ActiveRecord: 0.3ms)
+  [1m[36mSQL (9.3ms)[0m  [1mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 27]]
+  [1m[35mSQL (7.8ms)[0m  DELETE FROM "questions" WHERE "questions"."id" = ?  [["id", 30]]
+  [1m[36mSQL (3.6ms)[0m  [1mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 31]]
+
+
+Started GET "/" for ::1 at 2016-08-27 13:30:12 +0530
+Processing by HomeController#index as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered home/_navbar.html.erb (0.0ms)
+  Rendered home/_new_question_form.html.erb (0.2ms)
+Completed 200 OK in 43ms (Views: 42.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/32" for ::1 at 2016-08-27 13:30:14 +0530
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 32]]
+  Rendered home/_new_answer_form.html.erb (0.3ms)
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  ORDER BY "answers"."created_at" DESC[0m  [["question_id", 32]]
+  Rendered questions/show.html.erb within layouts/application (1.9ms)
+  Rendered home/_navbar.html.erb (0.0ms)
+  Rendered home/_new_question_form.html.erb (0.3ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/32" for ::1 at 2016-08-27 13:30:30 +0530
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 32]]
+  Rendered home/_new_answer_form.html.erb (0.2ms)
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  ORDER BY "answers"."created_at" DESC[0m  [["question_id", 32]]
+  Rendered questions/show.html.erb within layouts/application (1.6ms)
+  Rendered home/_navbar.html.erb (0.1ms)
+  Rendered home/_new_question_form.html.erb (0.3ms)
+Completed 200 OK in 60ms (Views: 58.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-08-27 13:34:01 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered home/index.html.erb within layouts/application (16.4ms)
+  Rendered home/_navbar.html.erb (0.4ms)
+  Rendered home/_new_question_form.html.erb (0.8ms)
+Completed 200 OK in 116ms (Views: 103.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-08-27 13:34:39 +0530
+Processing by HomeController#index as HTML
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered home/_navbar.html.erb (0.3ms)
+  Rendered home/_new_question_form.html.erb (0.2ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions/32" for ::1 at 2016-08-27 13:36:24 +0530
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 32]]
+  Rendered home/_new_answer_form.html.erb (0.6ms)
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  ORDER BY "answers"."created_at" DESC[0m  [["question_id", 32]]
+  Rendered questions/show.html.erb within layouts/application (3.0ms)
+  Rendered home/_navbar.html.erb (0.3ms)
+  Rendered home/_new_question_form.html.erb (0.2ms)
+Completed 200 OK in 77ms (Views: 53.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-08-27 13:37:06 +0530
+Processing by HomeController#index as HTML
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+  Rendered home/_navbar.html.erb (0.1ms)
+  Rendered home/_new_question_form.html.erb (0.9ms)
+Completed 200 OK in 52ms (Views: 51.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-08-27 13:37:12 +0530
+Processing by HomeController#index as HTML
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+  Rendered home/_navbar.html.erb (0.3ms)
+  Rendered home/_new_question_form.html.erb (0.8ms)
+Completed 200 OK in 49ms (Views: 48.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-08-27 13:37:13 +0530
+Processing by HomeController#index as HTML
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered home/_navbar.html.erb (0.0ms)
+  Rendered home/_new_question_form.html.erb (0.2ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-08-27 13:37:14 +0530
+Processing by HomeController#index as HTML
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered home/_navbar.html.erb (0.0ms)
+  Rendered home/_new_question_form.html.erb (0.2ms)
+Completed 200 OK in 47ms (Views: 46.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions/32" for ::1 at 2016-08-27 13:42:57 +0530
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 32]]
+  Rendered home/_new_answer_form.html.erb (0.3ms)
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  ORDER BY "answers"."created_at" DESC[0m  [["question_id", 32]]
+  Rendered questions/show.html.erb within layouts/application (2.4ms)
+  Rendered home/_navbar.html.erb (0.1ms)
+  Rendered home/_new_question_form.html.erb (0.4ms)
+Completed 200 OK in 66ms (Views: 64.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-08-27 13:43:02 +0530
+Processing by HomeController#index as HTML
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered home/_navbar.html.erb (0.1ms)
+  Rendered home/_new_question_form.html.erb (0.2ms)
+Completed 200 OK in 68ms (Views: 66.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 192.168.1.24 at 2016-08-27 15:34:22 +0530
+Cannot render console from 192.168.1.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered home/index.html.erb within layouts/application (13.2ms)
+  Rendered home/_navbar.html.erb (0.4ms)
+  Rendered home/_new_question_form.html.erb (0.6ms)
+Completed 200 OK in 151ms (Views: 137.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/answers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.1.24 at 2016-08-27 15:34:23 +0530
+Cannot render console from 192.168.1.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.1.24 at 2016-08-27 15:34:23 +0530
+Cannot render console from 192.168.1.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/questions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.1.24 at 2016-08-27 15:34:23 +0530
+Cannot render console from 192.168.1.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.1.24 at 2016-08-27 15:34:23 +0530
+Cannot render console from 192.168.1.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.1.24 at 2016-08-27 15:34:23 +0530
+Cannot render console from 192.168.1.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home-771212b0a6d2eec8604e0ce24996f64c.css?body=1" for 192.168.1.24 at 2016-08-27 15:34:23 +0530
+Cannot render console from 192.168.1.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home-0aaa9659b32736d3eec62bd99093767b.js?body=1" for 192.168.1.24 at 2016-08-27 15:34:23 +0530
+Cannot render console from 192.168.1.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/answers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.1.24 at 2016-08-27 15:34:23 +0530
+Cannot render console from 192.168.1.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/questions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.1.24 at 2016-08-27 15:34:23 +0530
+Cannot render console from 192.168.1.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/questions" for 192.168.1.24 at 2016-08-27 15:35:06 +0530
+Cannot render console from 192.168.1.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j7vpdXhkqZgHPXmjlPFUkply/Vt71NrTDBxom2UC+LFHBULYmKjMkzcXy4qXWSrtlyobvzNACsrrQKNBSeMalA==", "question"=>{"email"=>"hashirmohammed@gmail.com", "body"=>"Heyyyyy"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "questions" ("email", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "hashirmohammed@gmail.com"], ["body", "Heyyyyy"], ["created_at", "2016-08-27 10:05:06.503633"], ["updated_at", "2016-08-27 10:05:06.503633"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://192.168.1.4:3000/
+Completed 302 Found in 8ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 192.168.1.24 at 2016-08-27 15:35:06 +0530
+Cannot render console from 192.168.1.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+  Rendered home/_navbar.html.erb (0.0ms)
+  Rendered home/_new_question_form.html.erb (0.2ms)
+Completed 200 OK in 56ms (Views: 55.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions/33" for 192.168.1.24 at 2016-08-27 15:35:09 +0530
+Cannot render console from 192.168.1.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered home/_new_answer_form.html.erb (0.6ms)
+  [1m[35mAnswer Load (0.1ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  ORDER BY "answers"."created_at" DESC  [["question_id", 33]]
+  Rendered questions/show.html.erb within layouts/application (3.2ms)
+  Rendered home/_navbar.html.erb (0.1ms)
+  Rendered home/_new_question_form.html.erb (0.2ms)
+Completed 200 OK in 75ms (Views: 54.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 192.168.1.24 at 2016-08-27 15:35:11 +0530
+Cannot render console from 192.168.1.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+  Rendered home/_navbar.html.erb (0.4ms)
+  Rendered home/_new_question_form.html.erb (0.6ms)
+Completed 200 OK in 53ms (Views: 52.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions/33" for 192.168.1.24 at 2016-08-27 15:35:12 +0530
+Cannot render console from 192.168.1.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered home/_new_answer_form.html.erb (0.3ms)
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  ORDER BY "answers"."created_at" DESC[0m  [["question_id", 33]]
+  Rendered questions/show.html.erb within layouts/application (1.9ms)
+  Rendered home/_navbar.html.erb (0.1ms)
+  Rendered home/_new_question_form.html.erb (0.2ms)
+Completed 200 OK in 50ms (Views: 48.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/answers" for 192.168.1.24 at 2016-08-27 15:35:21 +0530
+Cannot render console from 192.168.1.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o+nXAJbpkEQHBRYsw+iAkMtR1v7Be/oR4NR74dB6uxxrV3ytdiX1TzcvpAXAQP7vxQkwGonvKggHiLA7/JtZOQ==", "answer"=>{"question_id"=>"33", "email"=>"hashirmohammed@gmail.com", "body"=>"Odd patti"}}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 33]]
+Unpermitted parameter: question_id
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "answers" ("email", "body", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "hashirmohammed@gmail.com"], ["body", "Odd patti"], ["question_id", 33], ["created_at", "2016-08-27 10:05:21.187953"], ["updated_at", "2016-08-27 10:05:21.187953"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+[ActiveJob] Enqueued ActionMailer::DeliveryJob (Job ID: 31ad35ec-7de3-4f2d-aae8-b2d69042a2bf) to SuckerPunch(mailers) with arguments: "MainMailer", "notify_question_author", "deliver_now", gid://hu/Answer/27
+Unpermitted parameter: question_id
+Redirected to http://192.168.1.4:3000/questions/33
+Completed 302 Found in 63ms (ActiveRecord: 1.0ms)
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1  [["id", 27]]
+[ActiveJob] [ActionMailer::DeliveryJob] [31ad35ec-7de3-4f2d-aae8-b2d69042a2bf] Performing ActionMailer::DeliveryJob from SuckerPunch(mailers) with arguments: "MainMailer", "notify_question_author", "deliver_now", gid://hu/Answer/27
+
+
+Started GET "/questions/33" for 192.168.1.24 at 2016-08-27 15:35:22 +0530
+Cannot render console from 192.168.1.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered home/_new_answer_form.html.erb (0.2ms)
+  [1m[35mAnswer Load (0.1ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  ORDER BY "answers"."created_at" DESC  [["question_id", 33]]
+  Rendered questions/show.html.erb within layouts/application (2.5ms)
+  Rendered home/_navbar.html.erb (0.0ms)
+  Rendered home/_new_question_form.html.erb (0.2ms)
+Completed 200 OK in 68ms (Views: 65.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 192.168.1.24 at 2016-08-27 15:35:25 +0530
+Cannot render console from 192.168.1.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+  Rendered home/_navbar.html.erb (0.1ms)
+  Rendered home/_new_question_form.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 53.3ms | ActiveRecord: 0.1ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [31ad35ec-7de3-4f2d-aae8-b2d69042a2bf]   [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 33]]
+[ActiveJob] [ActionMailer::DeliveryJob] [31ad35ec-7de3-4f2d-aae8-b2d69042a2bf]   Rendered main_mailer/notify_question_author.html.erb within layouts/mailer (0.4ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [31ad35ec-7de3-4f2d-aae8-b2d69042a2bf]   Rendered main_mailer/notify_question_author.text.erb within layouts/mailer (0.3ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [31ad35ec-7de3-4f2d-aae8-b2d69042a2bf] 
+MainMailer#notify_question_author: processed outbound mail in 5165.4ms
+[ActiveJob] [ActionMailer::DeliveryJob] [31ad35ec-7de3-4f2d-aae8-b2d69042a2bf] 
+Sent mail to hashirmohammed@gmail.com (9.8ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [31ad35ec-7de3-4f2d-aae8-b2d69042a2bf] Date: Sat, 27 Aug 2016 15:35:26 +0530
+From: hashirmohammed@gmail.com
+To: hashirmohammed@gmail.com
+Message-ID: <57c165e667a70_c3623fedc5852b0c39089@Shanus-MacBook-Pro.local.mail>
+Subject: New answer to your question
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_57c165e66607d_c3623fedc5852b0c38965";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_57c165e66607d_c3623fedc5852b0c38965
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+My answer:
+
+Odd patti
+
+
+----==_mimepart_57c165e66607d_c3623fedc5852b0c38965
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    Hi,
+
+<h3>My answer:</h3>
+
+<p>
+  Odd patti
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_57c165e66607d_c3623fedc5852b0c38965--
+
+[ActiveJob] [ActionMailer::DeliveryJob] [31ad35ec-7de3-4f2d-aae8-b2d69042a2bf] Performed ActionMailer::DeliveryJob from SuckerPunch(mailers) in 5176.14ms
+
+
+Started GET "/questions/33" for 192.168.1.24 at 2016-08-27 15:35:27 +0530
+Cannot render console from 192.168.1.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered home/_new_answer_form.html.erb (0.3ms)
+  [1m[35mAnswer Load (0.1ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  ORDER BY "answers"."created_at" DESC  [["question_id", 33]]
+  Rendered questions/show.html.erb within layouts/application (2.3ms)
+  Rendered home/_navbar.html.erb (0.0ms)
+  Rendered home/_new_question_form.html.erb (0.2ms)
+Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 192.168.1.24 at 2016-08-27 15:35:31 +0530
+Cannot render console from 192.168.1.24! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered home/_navbar.html.erb (0.1ms)
+  Rendered home/_new_question_form.html.erb (0.3ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 192.168.1.4 at 2016-08-27 15:37:01 +0530
+Cannot render console from 192.168.1.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+  Rendered home/_navbar.html.erb (0.1ms)
+  Rendered home/_new_question_form.html.erb (0.5ms)
+Completed 200 OK in 109ms (Views: 108.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/answers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.1.4 at 2016-08-27 15:37:02 +0530
+Cannot render console from 192.168.1.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home-771212b0a6d2eec8604e0ce24996f64c.css?body=1" for 192.168.1.4 at 2016-08-27 15:37:02 +0530
+Cannot render console from 192.168.1.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/questions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.1.4 at 2016-08-27 15:37:02 +0530
+Cannot render console from 192.168.1.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.1.4 at 2016-08-27 15:37:02 +0530
+Cannot render console from 192.168.1.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.1.4 at 2016-08-27 15:37:02 +0530
+Cannot render console from 192.168.1.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/answers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.1.4 at 2016-08-27 15:37:02 +0530
+Cannot render console from 192.168.1.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.1.4 at 2016-08-27 15:37:02 +0530
+Cannot render console from 192.168.1.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/questions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.1.4 at 2016-08-27 15:37:02 +0530
+Cannot render console from 192.168.1.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home-0aaa9659b32736d3eec62bd99093767b.js?body=1" for 192.168.1.4 at 2016-08-27 15:37:02 +0530
+Cannot render console from 192.168.1.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/questions/33" for 192.168.1.4 at 2016-08-27 15:37:12 +0530
+Cannot render console from 192.168.1.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered home/_new_answer_form.html.erb (0.5ms)
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  ORDER BY "answers"."created_at" DESC  [["question_id", 33]]
+  Rendered questions/show.html.erb within layouts/application (4.9ms)
+  Rendered home/_navbar.html.erb (0.1ms)
+  Rendered home/_new_question_form.html.erb (0.4ms)
+Completed 200 OK in 116ms (Views: 113.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 192.168.1.4 at 2016-08-27 15:37:20 +0530
+Cannot render console from 192.168.1.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+  Rendered home/_navbar.html.erb (0.1ms)
+  Rendered home/_new_question_form.html.erb (0.6ms)
+Completed 200 OK in 96ms (Views: 94.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 192.168.1.4 at 2016-08-27 15:37:47 +0530
+Cannot render console from 192.168.1.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+  Rendered home/_navbar.html.erb (0.1ms)
+  Rendered home/_new_question_form.html.erb (0.8ms)
+Completed 200 OK in 135ms (Views: 133.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 192.168.1.4 at 2016-08-27 15:37:49 +0530
+Cannot render console from 192.168.1.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+  Rendered home/_navbar.html.erb (0.1ms)
+  Rendered home/_new_question_form.html.erb (0.4ms)
+Completed 200 OK in 102ms (Views: 100.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 192.168.1.4 at 2016-08-27 15:37:50 +0530
+Cannot render console from 192.168.1.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+  Rendered home/_navbar.html.erb (0.1ms)
+  Rendered home/_new_question_form.html.erb (0.4ms)
+Completed 200 OK in 107ms (Views: 105.7ms | ActiveRecord: 0.2ms)
+Terminating 3 actors...
+Terminating task: type=:finalizer, meta={:method_name=>:__shutdown__}, status=:receiving
+	Celluloid::TaskFiber backtrace unavailable. Please try `Celluloid.task_class = Celluloid::TaskThread` if you need backtraces here.
